@@ -18,7 +18,7 @@ function removeSelected(pacientes) {
                 setTimeout(function () {
                     tr.remove();
                 }, 500)
-                var pacienteName = tr.parentNode.children[0].children[0].textContent;
+                var pacienteName = tr.children[0].textContent;
                 alertRemovePaciente(pacienteName);
             }
         });
