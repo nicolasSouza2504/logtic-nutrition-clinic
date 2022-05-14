@@ -4,7 +4,7 @@ A project to help a nutrition clinic organize its patients and calculate their B
 What does this project do?  
 -
 - Insert new patients; 
-- Delete patients with dbClick; 
+- Delete patients with selection and click; 
 - Get patients from an api; 
 - Insert manual patients;
 - Search patients;
