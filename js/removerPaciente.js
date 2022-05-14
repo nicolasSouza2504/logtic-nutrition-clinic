@@ -12,7 +12,6 @@ function alertRemovePaciente(name) {
 function removeSelected(pacientes) {
     pacientes.forEach(function(pct) {
         pct.childNodes.forEach(function (tr) {
-            console.log(tr.textContent)
             if (tr.classList && tr.classList.contains("selected")) {
                 tr.classList.remove("selected");
                 tr.classList.add("fadeOut");
