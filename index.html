@@ -6,6 +6,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 
@@ -17,9 +18,16 @@
 <main>
     <section class="container">
         <h2>Meus pacientes</h2>
-        <label for="filtrar-tabela">Filtre:</label>
+        <div class="row">
+            <div class="col-sm-3">
+                <label for="filtrar-tabela">Filtre:</label>
+                <input type="text" name="filtro" id="filtrar-tabela" place holder="Digite o nome do paciente">
+            </div>
+            <fiv class="col-sm-4">
+                <button id="button-excluir"class="btn-exclude">Excluir</button>
+            </fiv>
+        </div>
 
-        <input type="text" name="filtro" id="filtrar-tabela" place holder="Digite o nome do paciente">
         <spam id="erro-ajax" class="invisivel"> Erro ao buscar os pacientes</spam>
         <table>
             <thead>
@@ -73,7 +81,7 @@
             </tbody>
         </table>
 
-        <button id="busca-paciente" class="botao bto-principal">Busca Paciente</button>
+        <button id="busca-paciente" class="btn-default">Busca Paciente</button>
     </section>
     <section class="container">
         <h2 id="titulo-form">Adicionar novo paciente</h2>
@@ -102,7 +110,7 @@
                        placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
             </div>
 
-            <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+            <button id="adicionar-paciente" class="btn-default">Adicionar</button>
         </form>
     </section>
 </main>
@@ -114,4 +122,6 @@
 <script src="js/removerPaciente.js"></script>
 <script src="js/filtra.js"></script>
 <script src="js/buscarPacientes.js"></script>
+<script src="js/selecionarPaciente.js"></script>
+
 </html>
